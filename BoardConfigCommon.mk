@@ -207,6 +207,9 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.full
 # RIL
 TARGET_RIL_VARIANT := caf
 
+# KeyMaster
+TARGET_PROVIDES_KEYMASTER := true
+
 # SELinux policies
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
